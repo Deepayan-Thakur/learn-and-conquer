@@ -192,7 +192,8 @@ export const DSA_TOPICS: DSATopic[] = [
       { title: "First Non-repeating Character (easy)", links: ["https://leetcode.com/problems/first-unique-character-in-a-string/"] },
       { title: "Maximum Number of Balloons (easy)", links: ["https://leetcode.com/problems/maximum-number-of-balloons/"] },
       { title: "Longest Palindrome (easy)", links: ["https://leetcode.com/problems/longest-palindrome/"] },
-      { title: "Ransom Note (easy)", links: ["https://leetcode.com/problems/ransom-note/"] }
+      { title: "Ransom Note (easy)", links: ["https://leetcode.com/problems/ransom-note/"] },
+      { title: "Top K frequent Words", links: ["https://leetcode.com/problems/top-k-frequent-words/description/"] }
     ]
   },
   {
@@ -214,13 +215,25 @@ export const DSA_TOPICS: DSATopic[] = [
       { title: "Binary search basic", links: ["https://leetcode.com/problems/binary-search/"] },
       { title: "Upper Bound/ Ceiling", links: ["https://www.geeksforgeeks.org/problems/ceil-in-a-sorted-array/1"] },
       { title: "First and Last position", links: ["https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/"] },
+      { title: "Count number of occurrences", links: ["https://www.geeksforgeeks.org/problems/number-of-occurrence2259/1"] },
       { title: "Search in infinite Sorted array", links: ["https://www.geeksforgeeks.org/find-position-element-sorted-array-infinite-numbers/"] },
       { title: "Peak index in Mountain", links: ["https://leetcode.com/problems/peak-index-in-a-mountain-array/"] },
+      { title: "Find peak in mountain range", links: ["https://leetcode.com/problems/find-peak-element/"] },
+      { title: "Find minimum in rotated sorted array", links: ["https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/"] },
+      { title: "Find number of rotations to sorted array", links: ["https://www.geeksforgeeks.org/problems/rotation4723/1"] },
+      { title: "Search in rotated sorted array", links: ["https://leetcode.com/problems/search-in-rotated-sorted-array/description/"] },
+      { title: "KOKO eating BANANAS", links: ["https://leetcode.com/problems/koko-eating-bananas/"] },
+      { title: "Min num of days to make m bouquets", links: ["https://leetcode.com/problems/minimum-number-of-days-to-make-m-bouquets/"] },
       { title: "Aggressive cows", links: ["https://www.geeksforgeeks.org/problems/aggressive-cows/1"] },
-      { title: "Book Allocation Problem", links: ["https://www.geeksforgeeks.org/problems/allocate-minimum-number-of-pages0937/1"] },
+      { title: "H index 2", links: ["https://leetcode.com/problems/h-index-ii/description/"] },
+      { title: "Max candies to k children", links: ["https://leetcode.com/problems/maximum-candies-allocated-to-k-children/description/"] },
       { title: "Capacity to ship packages in d days", links: ["https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/description/"] },
+      { title: "Book Allocation Problem", links: ["https://www.geeksforgeeks.org/problems/allocate-minimum-number-of-pages0937/1"] },
+      { title: "Split largest arrray", links: ["https://leetcode.com/problems/split-array-largest-sum/description/"] },
       { title: "Search 2D matrix", links: ["https://leetcode.com/problems/search-a-2d-matrix/"] },
       { title: "Search 2D matrix (Hard)", links: ["https://leetcode.com/problems/search-a-2d-matrix-ii/description/"] },
+      { title: "kth smallest in sorted matrix", links: ["https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/description/"] },
+      { title: "kth smallest in multiplication matrix", links: ["https://leetcode.com/problems/kth-smallest-number-in-multiplication-table/description/"] },
       { title: "median of 2 sorted arrays", links: ["https://leetcode.com/problems/median-of-two-sorted-arrays/"] }
     ]
   },
@@ -242,12 +255,20 @@ export const DSA_TOPICS: DSATopic[] = [
       { title: "kth smallest", links: ["https://www.geeksforgeeks.org/problems/kth-smallest-element5635/1"] },
       { title: "kth largest", links: ["https://leetcode.com/problems/kth-largest-element-in-an-array/description/"] },
       { title: "TOP K frequent Elements", links: ["https://leetcode.com/problems/top-k-frequent-elements/description/"] },
+      { title: "Top K frequent Words", links: ["https://leetcode.com/problems/top-k-frequent-words/description/"] },
       { title: "K closest points to origin", links: ["https://leetcode.com/problems/k-closest-points-to-origin/description/"] },
+      { title: "Find K closest elements", links: ["https://leetcode.com/problems/find-k-closest-elements/description/"] },
+      { title: "Kth weakest row in Matrix", links: ["https://leetcode.com/problems/the-k-weakest-rows-in-a-matrix/description/"] },
       { title: "Merge K Sorted Arrays", links: ["https://www.geeksforgeeks.org/problems/merge-k-sorted-arrays/1"] },
+      { title: "Kth Smallest in Sorted Matrix", links: ["https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/description/"] },
       { title: "LAST STONE WEIGHT", links: ["https://leetcode.com/problems/last-stone-weight/description/"] },
       { title: "CPU Task Scheduler", links: ["https://leetcode.com/problems/task-scheduler/description/"] },
+      { title: "Reorganize String", links: ["https://leetcode.com/problems/reorganize-string/"] },
+      { title: "Min number of refueling stops", links: ["https://leetcode.com/problems/minimum-number-of-refueling-stops/description/"] },
       { title: "IPO", links: ["https://leetcode.com/problems/ipo/description/"] },
-      { title: "Find median in data stream", links: ["https://leetcode.com/problems/find-median-from-data-stream/description/"] }
+      { title: "Course Scheduler 3", links: ["https://leetcode.com/problems/course-schedule-iii/description/"] },
+      { title: "Find median in data stream", links: ["https://leetcode.com/problems/find-median-from-data-stream/description/"] },
+      { title: "Sliding Window Median (hard)", links: ["https://leetcode.com/problems/sliding-window-median/description/"] }
     ]
   },
   {
@@ -265,9 +286,16 @@ export const DSA_TOPICS: DSATopic[] = [
       { title: "Next Phase Plan For The DSA Pattern Series | Comment Your Thoughts", url: "https://www.youtube.com/watch?v=GNz8F8MCOsU&list=PLbJhGqY-mq47k_WLUtzVjmarUm1EuXPj2&index=78", type: "video", platform: "Padho with Pratyush" }
     ],
     questions: [
-      { title: "Combination Sum", links: ["https://leetcode.com/problems/combination-sum/description/"] },
+      { title: "Fibonnaci", links: ["https://leetcode.com/problems/fibonacci-number/description/", "https://www.youtube.com/watch?v=j4wjZqzhMqc&t"] },
+      { title: "Check if string is Palindrome", links: ["https://www.geeksforgeeks.org/problems/palindrome-string0817/1", "https://www.youtube.com/watch?v=j4wjZqzhMqc&t"] },
+      { title: "Check if Array is Sorted", links: ["https://www.geeksforgeeks.org/problems/check-if-an-array-is-sorted0701/1", "https://www.youtube.com/watch?v=-gC-QEdpvO4"] },
+      { title: "Sum of digits of a number", links: ["https://www.geeksforgeeks.org/problems/sum-of-digits1742/1", "https://www.youtube.com/watch?v=-gC-QEdpvO4"] },
+      { title: "Remove occurrences of a character in string", links: ["https://www.geeksforgeeks.org/problems/remove-all-occurrences-of-a-character-in-a-string/1", "https://www.youtube.com/watch?v=-gC-QEdpvO4"] },
+      { title: "Generate parenthesis", links: ["https://leetcode.com/problems/generate-parentheses/description/"] },
+      { title: "Letter Combinations of phone number", links: ["https://leetcode.com/problems/letter-combinations-of-a-phone-number/description/", "https://www.youtube.com/watch?v=IKfIT6uFOcs"] },
       { title: "Permutations", links: ["https://leetcode.com/problems/permutations/description/"] },
-      { title: "Subsets", links: ["https://leetcode.com/problems/subsets/description/"] }
+      { title: "Combination Sum", links: ["https://leetcode.com/problems/combination-sum/description/"] },
+      { title: "Palindrome partition", links: ["https://leetcode.com/problems/palindrome-partitioning/description/"] }
     ]
   },
   {
@@ -291,13 +319,35 @@ export const DSA_TOPICS: DSATopic[] = [
     questions: [
       { title: "Inorder Traversal", links: ["https://leetcode.com/problems/binary-tree-inorder-traversal/description/"] },
       { title: "Preorder Traversal", links: ["https://leetcode.com/problems/binary-tree-preorder-traversal/description/"] },
+      { title: "Postorder Traversal", links: ["https://leetcode.com/problems/binary-tree-postorder-traversal/description/"] },
       { title: "Level Order", links: ["https://leetcode.com/problems/binary-tree-level-order-traversal/description/"] },
+      { title: "ZigZag Order", links: ["https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/description/"] },
+      { title: "Level Order II", links: ["https://leetcode.com/problems/binary-tree-level-order-traversal-ii/description/"] },
       { title: "Invert Tree", links: ["https://leetcode.com/problems/invert-binary-tree/description/"] },
       { title: "Symmetric Tree", links: ["https://leetcode.com/problems/symmetric-tree/description/"] },
-      { title: "LCA of Binary Tree", links: ["https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/description/"] },
+      { title: "Same Tree", links: ["https://leetcode.com/problems/same-tree/description/"] },
+      { title: "Subtree of another TREE", links: ["https://leetcode.com/problems/subtree-of-another-tree/description/"] },
+      { title: "Flip Equivalent Tree", links: ["https://leetcode.com/problems/flip-equivalent-binary-trees/description/"] },
+      { title: "LCA of Binary TREE", links: ["https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/description/"] },
+      { title: "Binary Search Tree", links: ["https://leetcode.com/problems/search-in-a-binary-search-tree/"] },
+      { title: "LCA of BST", links: ["https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/description/"] },
+      { title: "LCA of Deepest Leaves", links: ["https://leetcode.com/problems/lowest-common-ancestor-of-deepest-leaves/description/"] },
+      { title: "Two Sum IV", links: ["https://leetcode.com/problems/two-sum-iv-input-is-a-bst/description/"] },
+      { title: "Kth smallest element in BST", links: ["https://leetcode.com/problems/kth-smallest-element-in-a-bst/description/"] },
+      { title: "Minimum Depth of Binary Tree", links: ["https://leetcode.com/problems/minimum-depth-of-binary-tree/description/"] },
+      { title: "Maximum Depth of Binary Tree", links: ["https://leetcode.com/problems/maximum-depth-of-binary-tree/description/"] },
+      { title: "Balanced Binary Tree", links: ["https://leetcode.com/problems/balanced-binary-tree/description/"] },
       { title: "Diameter of Binary Tree", links: ["https://leetcode.com/problems/diameter-of-binary-tree/description/"] },
+      { title: "Check Completeness of Binary Tree", links: ["https://leetcode.com/problems/check-completeness-of-a-binary-tree/description/"] },
       { title: "Validate BST", links: ["https://leetcode.com/problems/validate-binary-search-tree/description/"] },
-      { title: "Path Sum II", links: ["https://leetcode.com/problems/path-sum-ii/"] }
+      { title: "Recover BST", links: ["https://leetcode.com/problems/recover-binary-search-tree/description/"] },
+      { title: "Path Sum", links: ["https://leetcode.com/problems/path-sum/description/"] },
+      { title: "Path Sum II", links: ["https://leetcode.com/problems/path-sum-ii/"] },
+      { title: "Sum of Root to Leaf", links: ["https://leetcode.com/problems/sum-root-to-leaf-numbers/description/"] },
+      { title: "Maximum Path Sum", links: ["https://leetcode.com/problems/binary-tree-maximum-path-sum/description/"] },
+      { title: "Contruct tree from preorder and inorder", links: ["https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/description/"] },
+      { title: "Contruct tree from postorder and inorder", links: ["https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/description/"] },
+      { title: "Sorted Array to BST", links: ["https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/description/"] }
     ]
   },
   {
@@ -317,6 +367,7 @@ export const DSA_TOPICS: DSATopic[] = [
     questions: [
       { title: "Construct Adjacency List", links: ["https://www.geeksforgeeks.org/problems/print-adjacency-list-1587115620/1"] },
       { title: "Graph DFS", links: ["https://www.geeksforgeeks.org/problems/depth-first-traversal-for-a-graph/1"] },
+      { title: "Graph BFS", links: ["https://www.geeksforgeeks.org/problems/bfs-traversal-of-graph/1"] },
       { title: "Number of Islands", links: ["https://leetcode.com/problems/number-of-islands/description/"] },
       { title: "Number of Provinces", links: ["https://leetcode.com/problems/number-of-provinces/description/"] },
       { title: "Rotten Oranges", links: ["https://leetcode.com/problems/rotting-oranges/"] },

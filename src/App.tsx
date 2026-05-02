@@ -5,14 +5,14 @@
 
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { 
-  BarChart2, 
-  BookOpen, 
-  Cpu, 
-  CheckCircle2, 
-  Clock, 
-  ChevronRight, 
-  Youtube, 
+import {
+  BarChart2,
+  BookOpen,
+  Cpu,
+  CheckCircle2,
+  Clock,
+  ChevronRight,
+  Youtube,
   Book,
   Brain,
   Calculator,
@@ -67,7 +67,7 @@ export default function App() {
 
       {/* Sidebar Overlay */}
       {isSidebarOpen && (
-        <div 
+        <div
           className="md:hidden fixed inset-0 bg-ink/20 z-20"
           onClick={() => setIsSidebarOpen(false)}
         />
@@ -88,11 +88,10 @@ export default function App() {
                 setActiveSection(item.id);
                 setIsSidebarOpen(false);
               }}
-              className={`w-full flex items-center space-x-3 px-3 py-2 rounded-lg transition-all duration-200 group ${
-                activeSection === item.id 
-                  ? 'bg-accent/10 text-accent font-medium' 
+              className={`w-full flex items-center space-x-3 px-3 py-2 rounded-lg transition-all duration-200 group ${activeSection === item.id
+                  ? 'bg-accent/10 text-accent font-medium'
                   : 'hover:bg-accent/5 text-ink/60 hover:text-ink'
-              }`}
+                }`}
             >
               <item.icon size={18} className={activeSection === item.id ? 'text-accent' : 'opacity-50 group-hover:opacity-100'} />
               <span className="text-sm">{item.label}</span>
@@ -150,14 +149,13 @@ function Dashboard({ goals, toggleGoal }: { goals: Goal[], toggleGoal: (id: stri
             </div>
             <div className="space-y-4">
               {goals.map(goal => (
-                <div 
-                  key={goal.id} 
+                <div
+                  key={goal.id}
                   onClick={() => toggleGoal(goal.id)}
                   className="flex items-start space-x-3 cursor-pointer group"
                 >
-                  <div className={`mt-1 h-4 w-4 rounded border flex items-center justify-center transition-colors ${
-                    goal.completed ? 'bg-accent border-accent' : 'border-ink/20 group-hover:border-accent/40'
-                  }`}>
+                  <div className={`mt-1 h-4 w-4 rounded border flex items-center justify-center transition-colors ${goal.completed ? 'bg-accent border-accent' : 'border-ink/20 group-hover:border-accent/40'
+                    }`}>
                     {goal.completed && <CheckCircle2 size={10} className="text-white" />}
                   </div>
                   <div className="flex-grow">
@@ -175,7 +173,7 @@ function Dashboard({ goals, toggleGoal }: { goals: Goal[], toggleGoal: (id: stri
             <h4 className="italic-heading text-lg mb-4 text-accent">Thought for Today</h4>
             <p className="text-sm font-serif italic text-accent/80">"Patterns emerge only to those who look close enough. Mastery is the result of repeated observation."</p>
           </div>
-          
+
           <div className="grid grid-cols-2 gap-4">
             <div className="p-4 border border-ink/5 rounded-xl bg-white shadow-sm hover:shadow-md transition-shadow cursor-default">
               <p className="text-2xl italic-heading text-accent">75%</p>
@@ -208,16 +206,16 @@ function DSASection() {
               <h3 className="text-2xl font-serif italic">{topic.pattern}</h3>
             </div>
             <p className="text-sm text-ink/70 mb-6 max-w-2xl">{topic.description}</p>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div>
                 <h4 className="text-[10px] font-mono uppercase tracking-widest opacity-40 mb-3 underline underline-offset-4">Resources</h4>
                 <div className="space-y-2">
                   {topic.videos.map((v, vid) => (
-                    <a 
-                      key={vid} 
-                      href={v.url} 
-                      target="_blank" 
+                    <a
+                      key={vid}
+                      href={v.url}
+                      target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center space-x-3 p-3 rounded-lg bg-white border border-ink/5 hover:border-accent transition-all group"
                     >
@@ -247,7 +245,7 @@ function DSASection() {
                           const isLeetCode = link.includes('leetcode');
                           const isGFG = link.includes('geeksforgeeks');
                           const label = isLeetCode ? 'LeetCode' : isGFG ? 'GFG' : `Resource ${lid + 1}`;
-                          
+
                           return (
                             <a
                               key={lid}
@@ -300,12 +298,11 @@ function AISection({ lastScan }: { lastScan: Date }) {
             <p className="text-[10px] font-mono uppercase opacity-40">Last Internet Scan</p>
             <p className="text-xs font-medium">{scanTime.toLocaleString()}</p>
           </div>
-          <button 
+          <button
             onClick={handleScan}
             disabled={isScanning}
-            className={`px-6 py-2 rounded-full text-[10px] font-mono uppercase tracking-widest transition-all ${
-              isScanning ? 'bg-accent/20 text-accent cursor-wait' : 'bg-ink text-white hover:bg-accent'
-            }`}
+            className={`px-6 py-2 rounded-full text-[10px] font-mono uppercase tracking-widest transition-all ${isScanning ? 'bg-accent/20 text-accent cursor-wait' : 'bg-ink text-white hover:bg-accent'
+              }`}
           >
             {isScanning ? 'Scanning...' : 'Scan Now'}
           </button>
@@ -325,9 +322,9 @@ function AISection({ lastScan }: { lastScan: Date }) {
             <p className="text-xs text-ink/60 mb-8 leading-relaxed flex-grow">{trend.description}</p>
             <div className="mt-auto space-y-2 pt-6 border-t border-ink/5">
               {trend.resources.map((r, rid) => (
-                <a 
-                  key={rid} 
-                  href={r.url} 
+                <a
+                  key={rid}
+                  href={r.url}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-between text-[10px] font-mono uppercase tracking-widest text-accent hover:underline group/link"
@@ -376,10 +373,10 @@ function AptitudeSection() {
           <h3 className="text-xs font-mono uppercase tracking-widest opacity-40 mb-6 border-b border-ink/10 pb-2">Quantitative Aptitude (Maths)</h3>
           <div className="space-y-3">
             {APTITUDE_TOPICS.map((r, i) => (
-              <a 
-                key={i} 
-                href={r.url} 
-                target="_blank" 
+              <a
+                key={i}
+                href={r.url}
+                target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-between p-4 rounded-2xl border border-ink/5 bg-white hover:border-accent hover:shadow-md transition-all group"
               >
@@ -409,13 +406,13 @@ function AptitudeSection() {
                 <span className="text-[9px] px-2 py-0.5 rounded border border-accent/20 text-accent font-mono">PUZZLES</span>
               </div>
             </div>
-            
+
             <div className="space-y-3">
               {EXTRA_APTITUDE_TOPICS.map((r, i) => (
-                <a 
-                  key={i} 
-                  href={r.url} 
-                  target="_blank" 
+                <a
+                  key={i}
+                  href={r.url}
+                  target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-between p-4 rounded-2xl border border-ink/5 bg-white hover:border-accent hover:shadow-md transition-all group"
                 >
@@ -493,39 +490,39 @@ function TheorySection() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch mb-12">
         {Object.entries(THEORY_SUBJECTS).map(([key, subject]) => (
-            <div key={key} className="p-8 border border-ink/5 bg-white rounded-3xl shadow-sm hover:shadow-md transition-all relative overflow-hidden group flex flex-col h-full border-b-4 border-b-transparent hover:border-b-accent">
-              <div className="mb-8">
-                {key === 'polity' && <Scale size={24} className="text-accent/40" />}
-                {key === 'history' && <History size={24} className="text-accent/40" />}
-                {key === 'economics' && <BarChart2 size={24} className="text-accent/40" />}
-                {key === 'geography' && <Globe size={24} className="text-accent/40" />}
-              </div>
-              <h3 className="text-2xl italic-heading mb-2 group-hover:text-accent transition-colors">{subject.title}</h3>
-              {subject.recommendation && (
-                <div className="inline-flex items-center space-x-2 px-2 py-1 bg-accent/10 rounded mb-6 w-fit">
-                  <Book size={10} className="text-accent" />
-                  <span className="text-[10px] font-mono text-accent uppercase tracking-tighter">Rec: {subject.recommendation}</span>
-                </div>
-              )}
-              <div className="space-y-4 mb-8 flex-grow">
-                {subject.resources.slice(0, 4).map((res, rid) => (
-                  <a key={rid} href={res.url} target="_blank" rel="noopener noreferrer" className="flex items-center space-x-3 text-[13px] font-medium text-ink/70 hover:text-accent transition-colors group/link py-2 px-1 -ml-1 rounded-lg hover:bg-accent/5">
-                    <span className="opacity-40 font-mono text-[10px] w-5">0{rid + 1}</span>
-                    <span className="truncate flex-1">{res.title}</span>
-                    <ChevronRight size={14} className="opacity-0 group-hover/link:opacity-100 transition-opacity ml-auto flex-shrink-0" />
-                  </a>
-                ))}
-              </div>
-              <div className="mt-auto pt-6 border-t border-ink/5">
-                <a href={subject.resources[0].url} target="_blank" rel="noopener noreferrer" className="block w-full">
-                  <div className="text-[10px] font-mono uppercase tracking-widest text-ink/30 group-hover:text-accent transition-colors flex items-center justify-between w-full cursor-pointer">
-                    <span>Explore Fully</span>
-                    <Youtube size={14} className="opacity-50" />
-                  </div>
-                </a>
-              </div>
+          <div key={key} className="p-8 border border-ink/5 bg-white rounded-3xl shadow-sm hover:shadow-md transition-all relative overflow-hidden group flex flex-col h-full border-b-4 border-b-transparent hover:border-b-accent">
+            <div className="mb-8">
+              {key === 'polity' && <Scale size={24} className="text-accent/40" />}
+              {key === 'history' && <History size={24} className="text-accent/40" />}
+              {key === 'economics' && <BarChart2 size={24} className="text-accent/40" />}
+              {key === 'geography' && <Globe size={24} className="text-accent/40" />}
             </div>
-          ))}
+            <h3 className="text-2xl italic-heading mb-2 group-hover:text-accent transition-colors">{subject.title}</h3>
+            {subject.recommendation && (
+              <div className="inline-flex items-center space-x-2 px-2 py-1 bg-accent/10 rounded mb-6 w-fit">
+                <Book size={10} className="text-accent" />
+                <span className="text-[10px] font-mono text-accent uppercase tracking-tighter">Rec: {subject.recommendation}</span>
+              </div>
+            )}
+            <div className="space-y-4 mb-8 flex-grow">
+              {subject.resources.slice(0, 4).map((res, rid) => (
+                <a key={rid} href={res.url} target="_blank" rel="noopener noreferrer" className="flex items-center space-x-3 text-[13px] font-medium text-ink/70 hover:text-accent transition-colors group/link py-2 px-1 -ml-1 rounded-lg hover:bg-accent/5">
+                  <span className="opacity-40 font-mono text-[10px] w-5">0{rid + 1}</span>
+                  <span className="truncate flex-1">{res.title}</span>
+                  <ChevronRight size={14} className="opacity-0 group-hover/link:opacity-100 transition-opacity ml-auto flex-shrink-0" />
+                </a>
+              ))}
+            </div>
+            <div className="mt-auto pt-6 border-t border-ink/5">
+              <a href={subject.resources[0].url} target="_blank" rel="noopener noreferrer" className="block w-full">
+                <div className="text-[10px] font-mono uppercase tracking-widest text-ink/30 group-hover:text-accent transition-colors flex items-center justify-between w-full cursor-pointer">
+                  <span>Explore Fully</span>
+                  <Youtube size={14} className="opacity-50" />
+                </div>
+              </a>
+            </div>
+          </div>
+        ))}
       </div>
 
       <div className="p-8 border border-accent/10 bg-white rounded-3xl shadow-sm flex flex-col md:flex-row items-center justify-between">
